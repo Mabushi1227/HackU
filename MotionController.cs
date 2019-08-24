@@ -10,19 +10,19 @@ using VRM;
 public class MotionController : MonoBehaviour
 {
 	/* 各種関数で使用する変数  publicのものはunityエディタ上でアタッチする　*/
-	private Animator anim;				// Animatorへの参照
-		public float _interval = 10f;		// ランダム判定のインターバル
-		GameObject model;					//パラメータを反映させるモデル
-    	public GameObject ivent;			//PlayerInfoをアタッチしたゲームオブジェクト			
+	private Animator anim;			// Animatorへの参照
+	public float _interval = 10f;		// ランダム判定のインターバル
+	GameObject model;			//パラメータを反映させるモデル
+    	public GameObject ivent;		//PlayerInfoをアタッチしたゲームオブジェクト			
     	public VRMBlendShapeProxy Proxy;	//モデルのBlendShape(表情)変化に使用
-		int actionLength = 7;   			//アクション数
-		string comment;						//リアクション再生中に表示するコメント
-		private bool actionset;				//リアクション再生中
-		string process = "";				//リアクション再生ボタンに表示するメッセージ
-		PlayerInfo info;					//プレイヤーのパラメーターを取得するPlayerInfoクラス
-		public GameObject ui;				//コメント表示の時に表示する吹き出し
-		GUIStyle style = new GUIStyle();  
-		public Font font;
+	int actionLength = 7;   		//アクション数
+	string comment;				//リアクション再生中に表示するコメント
+	private bool actionset;			//リアクション再生中
+	string process = "";			//リアクション再生ボタンに表示するメッセージ
+	PlayerInfo info;			//プレイヤーのパラメーターを取得するPlayerInfoクラス
+	public GameObject ui;			//コメント表示の時に表示する吹き出し
+	GUIStyle style = new GUIStyle();        //UIの表示設定
+	public Font font;			//UIのフォント
 
 		// Use this for initialization
 	void Start ()
