@@ -10,3 +10,7 @@
     
 ### TargetRotaion.cs
     ・オブジェクトを回転させる
+
+#### 他サイドリンク
+    https://github.com/YuichiroSS/Hack_U_2019
+    https://github.com/ryoSSS/node_unity_app
